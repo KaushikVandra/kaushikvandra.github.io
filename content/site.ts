@@ -4,7 +4,7 @@ export const siteConfig = {
   titleTemplate: "%s | Kaushik Vandra",
   description:
     "Full Stack Developer with 3 years of experience building production web applications. React, Next.js, Node.js, NestJS, TypeScript — based in Ahmedabad, India.",
-  url: "https://kaushikvandra.dev",
+  url: "https://kaushikvandra.github.io",
   ogImage: "/og-image.svg",
   locale: "en_IN",
   location: {
