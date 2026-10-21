@@ -9,7 +9,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata: Metadata = createMetadata({
   title: "Selected Work",
   description:
-    "Full Stack Developer portfolio projects — Handwriting Analysis Portal, Corporate Website Rebuild, Patient Mentoring Platform. React, Next.js, NestJS, AWS Lambda.",
+    "Full Stack Developer portfolio projects — Stone Management SaaS Platform, Handwriting Analysis Portal, Patient Mentoring Platform. React, Next.js, NestJS, PostgreSQL.",
   path: "/work",
 });
 

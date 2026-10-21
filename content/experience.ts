@@ -19,12 +19,13 @@ export const experience: ExperienceEntry[] = [
     description:
       "Leading full-stack development on production SaaS products — owning features from API design through React UI to cloud deployment.",
     highlights: [
-      "Architected NX monorepo with shared libraries across React and NestJS apps",
+      "Architected multi-tenant Stone Management SaaS platform managing 12 lifecycle modules with NestJS & Prisma",
+      "Architected monorepo with shared libraries across React and NestJS applications",
       "Integrated Razorpay payments and subscription billing for users",
       "Reduced API response times by 40% through query optimization and caching",
       "Built patient mentoring platform on Next.js with AWS Lambda and PostgreSQL",
     ],
-    technologies: ["React.js", "NestJS", "MongoDB", "Zustand", "TanStack Query", "NX"],
+    technologies: ["React.js", "NestJS", "PostgreSQL", "Prisma", "MongoDB", "Zustand", "TanStack Query", "NX"],
   },
   {
     id: "exp-2",
@@ -33,9 +34,9 @@ export const experience: ExperienceEntry[] = [
     company: "Agile Infoways",
     location: "Ahmedabad, India",
     description:
-      "Rebuilt corporate web presence and delivered client-facing platforms with modern JAMstack and serverless architectures.",
+      "Delivered client-facing platforms and high-performance web applications with modern JAMstack and serverless architectures.",
     highlights: [
-      "Rebuilt corporate website with Gatsby.js + headless WordPress CMS via GraphQL",
+      "Engineered high-performance web platforms with headless CMS solutions via GraphQL",
       "Achieved 95+ Lighthouse scores across performance, accessibility, and SEO",
       "Implemented CI/CD pipelines cutting deployment time from hours to minutes",
     ],

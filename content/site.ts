@@ -26,6 +26,7 @@ export const siteConfig = {
     "NestJS",
     "TypeScript",
     "PostgreSQL",
+    "Prisma ORM",
     "MongoDB",
     "AWS Lambda",
     "GraphQL",

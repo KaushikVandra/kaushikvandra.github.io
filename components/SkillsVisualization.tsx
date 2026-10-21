@@ -21,7 +21,7 @@ const skillGroups = [
   },
   {
     category: "Database",
-    skills: ["PostgreSQL", "MongoDB", "Redis"],
+    skills: ["PostgreSQL", "Prisma", "MongoDB", "Redis"],
   },
   {
     category: "Infra & Tools",

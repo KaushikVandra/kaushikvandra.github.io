@@ -19,6 +19,50 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "stone-management-saas",
+    title: "Stone Management SaaS Platform",
+    tagline: "Industrial multi-tenant ERP digitizing stone lifecycle & volumetric CFT billing",
+    role: "Full Stack Architect & Developer",
+    duration: "8 months",
+    outcome: "12 domain modules · 90+ REST endpoints · Zero CFT billing drift",
+    description:
+      "A multi-tenant industrial SaaS platform engineered with NestJS, PostgreSQL (Prisma), and React/Vite that digitizes the complete lifecycle of architectural stone — from CAD planning and procurement through dispatch, site receiving, CNC processing, installation, and on-the-fly CFT billing.",
+    problem:
+      "Architectural stone fabrication and monumental installation projects historically relied on fragmented spreadsheets, phone calls, and handwritten challans across suppliers, cutting yards, and job sites. Tracking thousands of unique custom-dimension stones caused frequent transit losses, high defect rates, and recurring volumetric (Cubic Feet / CFT) calculation discrepancies that tied up payments in prolonged disputes.",
+    approach:
+      "I architected a modular monorepo containing a NestJS REST API with Prisma ORM and PostgreSQL on the backend, alongside a high-performance React 18 + Vite frontend with Tailwind CSS and Ant Design 5. Multi-tenancy was built from the ground up with shared DB / shared schema isolation using tenantId scoping and 7-tier granular RBAC. I implemented a strict finite state machine governing stones through 11 lifecycle stages (PLANNED → ORDERED → CUTTING_COMPLETED → IN_TRANSIT → RECEIVED → PROCESSING → READY_FOR_INSTALL → INSTALLED) with dynamic capability bypasses when client modules are disabled. Crucially, I engineered an on-the-fly volumetric CFT calculation engine computed dynamically from millimetre dimensions at query time, guaranteeing mathematical precision without stored redundant totals. The solution includes digital gate passes, delivery challan verification, salvage issue management with automated replacement code generation, and executive Recharts analytics.",
+    stack: [
+      "NestJS",
+      "PostgreSQL",
+      "Prisma ORM",
+      "React.js",
+      "Vite",
+      "TypeScript",
+      "Tailwind CSS",
+      "Ant Design",
+      "Zustand",
+      "TanStack Query",
+    ],
+    result:
+      "Delivered 12 production domain modules covering 90+ REST endpoints. Replaced error-prone paper workflows with real-time digital tracking, reduced volumetric billing disputes to zero through verified dynamic CFT rollups, and gave project managers instant visibility into fabrication milestones, yard inventory, and installation progress across multiple project sites.",
+    lessons:
+      "In industrial supply chains, never store derived volumetric aggregates like CFT in database columns; computing on the fly from verified base dimensions eliminates reconciliation drift across revisions. Furthermore, decoupling lifecycle status from physical facility location enabled clean, auditable transfer workflows across complex multi-facility supply chains.",
+    keywords: [
+      "NestJS",
+      "React",
+      "PostgreSQL",
+      "Prisma",
+      "SaaS",
+      "ERP",
+      "TypeScript",
+      "Multi-Tenancy",
+      "Enterprise",
+    ],
+    datePublished: "2024-10-15",
+    featured: true,
+    gradient: "from-sky-500/20 to-indigo-500/20",
+  },
+  {
     slug: "handwriting-analysis-portal",
     title: "Handwriting Analysis Portal",
     tagline: "Handwriting analysis platform with payments & monorepo architecture",
@@ -40,29 +84,6 @@ export const projects: Project[] = [
     datePublished: "2024-06-01",
     featured: true,
     gradient: "from-emerald-500/20 to-cyan-500/20",
-  },
-  {
-    slug: "corporate-website-rebuild",
-    title: "Corporate Website Rebuild",
-    tagline: "Headless CMS migration with blazing-fast static delivery",
-    role: "Full Stack Developer",
-    duration: "4 months",
-    outcome: "~40% performance improvement · Top Lighthouse scores",
-    description:
-      "Architected a headless CMS static site using Gatsby.js + WordPress/GraphQL, improving site performance by ~40% and achieving top Lighthouse scores.",
-    problem:
-      "The existing WordPress site loaded slowly, scored poorly on Core Web Vitals, and frustrated both visitors and content editors. SEO rankings were declining due to performance penalties.",
-    approach:
-      "I implemented Gatsby.js as the static site generator pulling content via GraphQL from headless WordPress. Image optimization, code splitting, and CDN delivery were configured from day one. Implemented lazy loading, build-time optimisations, and responsive design; ensured seamless content updates for non-technical editors.",
-    stack: ["Gatsby.js", "WordPress CMS", "GraphQL", "JavaScript", "HTML5", "SCSS"],
-    result:
-      "Achieved top Lighthouse scores across all metrics. Site performance improved by ~40%. Organic traffic increased within months post-launch.",
-    lessons:
-      "Headless CMS gives editors flexibility without sacrificing frontend performance. GraphQL's query efficiency matters when pages aggregate content from multiple WordPress post types.",
-    keywords: ["Gatsby.js", "GraphQL", "WordPress", "Performance", "SEO"],
-    datePublished: "2023-11-15",
-    featured: true,
-    gradient: "from-violet-500/20 to-fuchsia-500/20",
   },
   {
     slug: "patient-mentoring-platform",
