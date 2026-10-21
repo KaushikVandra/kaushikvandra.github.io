@@ -43,6 +43,16 @@ export function createMetadata({
       description: pageDescription,
       images: [ogImage],
     },
+    icons: {
+      icon: [
+        { url: "/favicon.ico", sizes: "any" },
+        { url: "/favicon.svg", type: "image/svg+xml" },
+      ],
+      apple: [
+        { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      ],
+    },
+    manifest: "/site.webmanifest",
     robots: { index: true, follow: true },
     keywords: [
       "Full Stack Developer",

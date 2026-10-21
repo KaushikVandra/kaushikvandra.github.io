@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient (Dark Mode) -->
+    <radialGradient id="bgGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#151d28"/>
+      <stop offset="100%" stop-color="#0a0e14"/>
+    </radialGradient>
+
+    <!-- Neon Green Linear Gradient -->
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#55ff33"/>
+      <stop offset="100%" stop-color="#28d709"/>
+    </linearGradient>
+
+    <!-- White / Ice Linear Gradient -->
+    <linearGradient id="whiteGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <!-- Soft Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    :root {
+      --bg: url(#bgGrad);
+      --border-glow: #39ff14;
+      --border-inner: #21262d;
+      --k-stroke: url(#neonGrad);
+      --v-stroke: url(#whiteGrad);
+      --cursor-fill: #39ff14;
+      --corner-accent: #39ff14;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #ffffff;
+        --border-glow: #1a7f37;
+        --border-inner: #d0d7de;
+        --k-stroke: #1a7f37;
+        --v-stroke: #0d1117;
+        --cursor-fill: #1a7f37;
+        --corner-accent: #1a7f37;
+      }
+    }
+    .bg { fill: var(--bg); }
+    .border-glow { stroke: var(--border-glow); stroke-opacity: 0.35; }
+    .border-inner { stroke: var(--border-inner); stroke-opacity: 0.6; }
+    .stroke-k { stroke: var(--k-stroke); }
+    .stroke-v { stroke: var(--v-stroke); }
+    .fill-cursor { fill: var(--cursor-fill); }
+    .corner-accent { stroke: var(--corner-accent); stroke-opacity: 0.4; }
+  </style>
+
+  <!-- Squircle Base -->
+  <rect class="bg" width="512" height="512" rx="112"/>
+
+  <!-- Subtle Cyberpunk Grid / Frame -->
+  <rect class="border-glow" x="14" y="14" width="484" height="484" rx="98" fill="none" stroke-width="5"/>
+  <rect class="border-inner" x="26" y="26" width="460" height="460" rx="86" fill="none" stroke-width="2"/>
+
+  <!-- Corner accent markers -->
+  <path class="corner-accent" d="M 40 64 L 64 40" stroke-width="2"/>
+  <path class="corner-accent" d="M 472 64 L 448 40" stroke-width="2"/>
+  <path class="corner-accent" d="M 40 448 L 64 472" stroke-width="2"/>
+  <path class="corner-accent" d="M 472 448 L 448 472" stroke-width="2"/>
+
+  <!-- Letter K (Neon Terminal Green) -->
+  <!-- K Stem -->
+  <path class="stroke-k" d="M 112 140 L 112 372" stroke-width="52" stroke-linecap="round" filter="url(#glow)"/>
+  <!-- K Upper Diagonal -->
+  <path class="stroke-k" d="M 116 256 L 216 142" stroke-width="50" stroke-linecap="round" filter="url(#glow)"/>
+  <!-- K Lower Diagonal -->
+  <path class="stroke-k" d="M 148 232 L 218 372" stroke-width="50" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Letter V (Crisp Ice White) -->
+  <path class="stroke-v" d="M 270 142 L 340 372 L 410 142" fill="none" stroke-width="50" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Terminal Cursor Underline (Neon Green) -->
+  <rect class="fill-cursor" x="320" y="414" width="94" height="20" rx="6" filter="url(#glow)"/>
+</svg>
