@@ -122,3 +122,20 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+/* Custom cursor styles (applied only when CustomCursor is active on fine-pointer devices) */
+@media (hover: hover) and (pointer: fine) {
+  html.custom-cursor-active,
+  html.custom-cursor-active body,
+  html.custom-cursor-active body * {
+    cursor: none !important;
+  }
+
+  /* Preserve native text cursor in inputs, textareas and editable elements */
+  html.custom-cursor-active input,
+  html.custom-cursor-active textarea,
+  html.custom-cursor-active [contenteditable="true"] {
+    cursor: text !important;
+  }
+}
+

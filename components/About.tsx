@@ -7,10 +7,11 @@ import { Reveal } from "./Reveal";
 const whoamiOutput = [
   { key: "name", value: siteConfig.name },
   { key: "role", value: siteConfig.jobTitle },
-  { key: "experience", value: `${siteConfig.yearsExperience} years professional` },
+  { key: "experience", value: `${siteConfig.yearsExperience}+ years professional` },
   { key: "location", value: `${siteConfig.location.city}, ${siteConfig.location.country}` },
-  { key: "education", value: siteConfig.education.degree },
-  { key: "stack", value: siteConfig.knowsAbout.slice(0, 6).join(", ") + "..." },
+  { key: "education", value: `${siteConfig.education.degree} (CGPA: ${siteConfig.education.cgpa})` },
+  { key: "phone", value: siteConfig.phone },
+  { key: "stack", value: siteConfig.knowsAbout.slice(0, 7).join(", ") + "..." },
 ];
 
 export function About() {
@@ -32,17 +33,18 @@ export function About() {
           <Reveal delay={1}>
             <p className="text-lg leading-relaxed text-[var(--fg-muted)]">
               I&apos;m a{" "}
-              <strong className="text-[var(--fg)]">Full Stack Developer</strong> with{" "}
+              <strong className="text-[var(--fg)]">{siteConfig.jobTitle}</strong> with{" "}
               <strong className="text-[var(--accent)]">
-                {siteConfig.yearsExperience} years of experience
+                {siteConfig.yearsExperience}+ years of experience
               </strong>{" "}
-              building production web applications across the full stack — from pixel-perfect
-              React interfaces to robust NestJS APIs, database design, and cloud deployment.
+              designing and scaling web applications, enterprise multi-tenant SaaS platforms, and
+              high-throughput RESTful architectures using React.js, Next.js, TypeScript, Node.js, and NestJS.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-[var(--fg-muted)]">
-              Based in {siteConfig.location.city}, I own features end-to-end: architecture,
-              implementation, testing, and iteration. I thrive on solving complex problems
-              with clean, maintainable code.
+              Based in {siteConfig.location.city}, India, I specialize in relational &amp; NoSQL database modeling
+              (PostgreSQL, Prisma ORM, MongoDB), reactive state management (TanStack Query, Zustand),
+              and establishing production-grade CI/CD pipelines via GitHub Actions, Docker containerization,
+              and GCP cloud deployment.
             </p>
           </Reveal>
 

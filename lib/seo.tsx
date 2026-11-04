@@ -56,9 +56,10 @@ export function createMetadata({
     robots: { index: true, follow: true },
     keywords: [
       "Full Stack Developer",
+      "Remote Full Stack Developer",
+      "Remote Developer",
       "React Developer",
       "Next.js Developer",
-      "Ahmedabad",
       "TypeScript",
       "Node.js",
     ],
@@ -73,6 +74,7 @@ export function personJsonLd() {
     jobTitle: siteConfig.jobTitle,
     url: baseUrl,
     email: siteConfig.email,
+    telephone: siteConfig.phone,
     address: {
       "@type": "PostalAddress",
       addressLocality: siteConfig.location.city,

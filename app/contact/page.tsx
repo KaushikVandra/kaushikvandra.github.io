@@ -7,7 +7,7 @@ import { siteConfig } from "@/content/site";
 
 export const metadata: Metadata = createMetadata({
   title: "Contact",
-  description: `Contact ${siteConfig.name}, Full Stack Developer in ${siteConfig.location.city}. Open to full-time and freelance opportunities. React, Next.js, Node.js specialist.`,
+  description: `Contact ${siteConfig.name}, ${siteConfig.jobTitle} based in ${siteConfig.location.city}, Gujarat. Open to remote jobs, full-time positions, and freelance opportunities. React.js, Next.js, Node.js, and NestJS specialist.`,
   path: "/contact",
 });
 

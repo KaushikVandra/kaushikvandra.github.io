@@ -47,8 +47,8 @@ export function Contact() {
             </div>
 
             <p className="mt-6 max-w-xl text-lg text-[var(--fg-muted)]">
-              Looking for a Full Stack Developer with {siteConfig.yearsExperience} years of
-              experience in React, Next.js, and Node.js? I&apos;d love to hear about your project.
+              Looking for a {siteConfig.jobTitle} with {siteConfig.yearsExperience}+ years of
+              experience in React.js, Next.js, Node.js, and NestJS? I&apos;d love to hear about your project or open roles.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-6">
@@ -63,6 +63,13 @@ export function Contact() {
               >
                 send_email()
               </motion.a>
+
+              <a
+                href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}
+                className="font-mono text-xs text-[var(--fg-muted)] transition-colors hover:text-[var(--accent)]"
+              >
+                {siteConfig.phone}
+              </a>
 
               <div className="flex gap-4">
                 {Object.entries(siteConfig.social).map(([key, url]) => (

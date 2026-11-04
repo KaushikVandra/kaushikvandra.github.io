@@ -12,20 +12,50 @@ const SkillsScene = dynamic(
 
 const skillGroups = [
   {
-    category: "Frontend",
-    skills: ["React.js", "Next.js", "TypeScript", "Gatsby.js", "Tailwind CSS", "Zustand", "TanStack Query"],
+    category: "Languages",
+    skills: ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3 / SCSS", "SQL"],
   },
   {
-    category: "Backend",
-    skills: ["Node.js", "NestJS", "GraphQL", "REST APIs", "AWS Lambda"],
+    category: "Frameworks & Libraries",
+    skills: [
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "NestJS",
+      "Express.js",
+      "TanStack Query",
+      "Zustand",
+      "Tailwind CSS",
+      "Ant Design 5",
+    ],
   },
   {
-    category: "Database",
-    skills: ["PostgreSQL", "Prisma", "MongoDB", "Redis"],
+    category: "Databases & ORM",
+    skills: ["PostgreSQL", "MongoDB", "Prisma ORM", "Mongoose"],
   },
   {
-    category: "Infra & Tools",
-    skills: ["AWS", "Docker", "Git", "CI/CD", "NX Monorepo", "Vercel"],
+    category: "DevOps & Cloud",
+    skills: [
+      "GitHub Actions (CI/CD)",
+      "Docker",
+      "Docker Compose",
+      "GCP (Compute Engine)",
+      "Nginx",
+      "Git",
+      "Linux",
+    ],
+  },
+  {
+    category: "Practices & Architecture",
+    skills: [
+      "CI/CD Pipelines",
+      "Multi-Tenant Architecture",
+      "Finite State Machines",
+      "RBAC",
+      "REST APIs",
+      "Agile / Scrum",
+      "Jira",
+    ],
   },
 ];
 

@@ -44,6 +44,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         ref={ref}
         href={`/work/${project.slug}`}
         className="group relative block"
+        data-cursor-label="view()"
         onMouseMove={handleMove}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={handleLeave}

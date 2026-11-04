@@ -76,7 +76,7 @@ export function Hero() {
             custom={0}
             className="mb-4 font-mono text-sm tracking-widest text-[var(--accent)] uppercase"
           >
-            {"// "}{siteConfig.jobTitle} · {siteConfig.yearsExperience} years · {siteConfig.location.city}
+            {"// "}{siteConfig.jobTitle} · {siteConfig.yearsExperience}+ years experience · {siteConfig.location.city}
           </motion.p>
 
           <motion.h1
@@ -92,10 +92,10 @@ export function Hero() {
             custom={2}
             className="mt-6 max-w-2xl text-lg text-[var(--fg-muted)] sm:text-xl"
           >
-            I build production-grade web applications end-to-end — from React & Next.js
-            frontends to NestJS APIs, databases, and cloud deployment.{" "}
+            Designing and scaling high-performance web applications, enterprise SaaS platforms,
+            and robust RESTful architectures using React.js, Next.js, Node.js, and NestJS.{" "}
             <span className="text-[var(--fg)]">
-              {siteConfig.yearsExperience} years of shipping real products.
+              {siteConfig.yearsExperience}+ years of production experience.
             </span>
           </motion.p>
 

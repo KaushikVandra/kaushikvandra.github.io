@@ -9,7 +9,7 @@ import { createMetadata } from "@/lib/seo";
 export const metadata: Metadata = createMetadata({
   title: "Selected Work",
   description:
-    "Full Stack Developer portfolio projects — Stone Management SaaS Platform, Handwriting Analysis Portal, Patient Mentoring Platform. React, Next.js, NestJS, PostgreSQL.",
+    "Full-Stack / MERN Developer portfolio projects — Stone Management Platform, Handwriting Analysis Portal, and Patient Mentoring Platform. React 18, Next.js, NestJS, PostgreSQL, Prisma, MongoDB, GCP.",
   path: "/work",
 });
 
@@ -26,8 +26,8 @@ export default function WorkPage() {
             Selected Work
           </h1>
           <p className="mt-4 max-w-2xl text-[var(--fg-muted)]">
-            Production applications built over 3 years of full-stack development —
-            from SaaS platforms to headless CMS sites and serverless healthcare tools.
+            Production applications built over 3+ years of full-stack development —
+            from enterprise multi-tenant SaaS platforms to automated graphology portals and serverless healthcare tools.
           </p>
 
           <div className="mt-12 grid gap-8">
