@@ -15,6 +15,7 @@ export type Project = {
   datePublished: string;
   featured: boolean;
   gradient: string;
+  liveUrl?: string;
 };
 
 export const projects: Project[] = [
@@ -25,6 +26,7 @@ export const projects: Project[] = [
     role: "Full-Stack Architect & Developer",
     duration: "Production SaaS",
     outcome: "7 RBAC Roles · FSM Lifecycle Engine · GCP Compute Engine",
+    liveUrl: "https://kenashatech.com",
     description:
       "A multi-tenant enterprise SaaS platform architected with React 18, NestJS, TypeScript, PostgreSQL (Prisma ORM), Docker, and GCP that manages the full construction stone lifecycle — from quarry block extraction and slab cutting to QC inspection, dispatch, and site installation.",
     problem:
@@ -72,6 +74,7 @@ export const projects: Project[] = [
     role: "Full-Stack Developer",
     duration: "Production Platform",
     outcome: "Personalized PDF/Word Reports · Razorpay Webhooks · NX Monorepo",
+    liveUrl: "https://graphology.infumi.ai",
     description:
       "A full-stack platform built with React.js, NestJS, TypeScript, Zustand, TanStack Query, and MongoDB that enables certified graphologists to evaluate handwriting samples and automatically generate personalized, in-depth analytical PDF/Word reports for end users.",
     problem:
@@ -114,6 +117,7 @@ export const projects: Project[] = [
     role: "Full-Stack Developer",
     duration: "Production Platform",
     outcome: "Real-time Chat & Video · Serverless AWS Lambda · Mobile Performance",
+    liveUrl: "https://howdiditgo.com",
     description:
       "An active production healthcare platform built with Next.js, AWS Lambda, PostgreSQL, REST APIs, and Tailwind CSS, connecting surgery patients with verified mentors through real-time communication.",
     problem:

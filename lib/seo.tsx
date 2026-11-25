@@ -107,6 +107,7 @@ export function creativeWorkJsonLd(project: {
   slug: string;
   datePublished: string;
   keywords: string[];
+  liveUrl?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -114,6 +115,7 @@ export function creativeWorkJsonLd(project: {
     name: project.title,
     description: project.description,
     url: `${baseUrl}/work/${project.slug}`,
+    ...(project.liveUrl ? { sameAs: project.liveUrl } : {}),
     datePublished: project.datePublished,
     author: { "@type": "Person", name: siteConfig.name },
     keywords: project.keywords.join(", "),

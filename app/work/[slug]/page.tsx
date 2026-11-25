@@ -55,6 +55,18 @@ export default async function CaseStudyPage({ params }: Props) {
             </h1>
             <p className="mt-4 text-xl text-[var(--fg-muted)]">{project.tagline}</p>
             <p className="mt-2 font-mono text-sm text-[var(--accent)]">{project.outcome}</p>
+            {project.liveUrl && (
+              <div className="mt-6">
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 border border-[var(--accent)] bg-[var(--accent)]/10 px-4 py-2 font-mono text-sm text-[var(--accent)] transition-colors hover:bg-[var(--accent)] hover:text-[var(--bg)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]"
+                >
+                  visit_live() ↗
+                </a>
+              </div>
+            )}
           </header>
 
           <div className="mt-8 flex flex-wrap gap-2">

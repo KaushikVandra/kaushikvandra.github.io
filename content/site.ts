@@ -73,7 +73,7 @@ export const faqs = [
   {
     question: "How do you handle remote collaboration across different time zones?",
     answer:
-      "Based in India (UTC+5:30), I have extensive experience collaborating asynchronously and synchronously with distributed engineering teams across US, European, and APAC time zones. I emphasize clear PR documentation, proactive status updates, task tracking in Jira, and dedicated overlap hours for real-time standups and architecture reviews.",
+      "Based in India (UTC+5:30), I have extensive experience collaborating asynchronously and synchronously with distributed engineering teams across US, European, and APAC time zones. I emphasize clear PR documentation, proactive status updates, structured task tracking, and dedicated overlap hours for real-time standups and architecture reviews.",
   },
   {
     question: "What is your architectural philosophy when building enterprise web applications?",

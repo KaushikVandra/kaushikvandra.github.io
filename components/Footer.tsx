@@ -15,14 +15,14 @@ export function Footer() {
         </div>
 
         <nav aria-label="Footer navigation" className="flex flex-wrap gap-6">
+          <Link href="/" className="font-mono text-xs text-[var(--fg-muted)] hover:text-[var(--accent)]">
+            Home
+          </Link>
           <Link href="/work" className="font-mono text-xs text-[var(--fg-muted)] hover:text-[var(--accent)]">
             Work
           </Link>
           <Link href="/contact" className="font-mono text-xs text-[var(--fg-muted)] hover:text-[var(--accent)]">
             Contact
-          </Link>
-          <Link href="/sitemap.xml" className="font-mono text-xs text-[var(--fg-muted)] hover:text-[var(--accent)]">
-            Sitemap
           </Link>
         </nav>
 

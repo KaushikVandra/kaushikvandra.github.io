@@ -2,3 +2,6 @@ node_modules
 .next
 out
 *.tsbuildinfo
+
+.DS_Store
+app/.DS_Store
